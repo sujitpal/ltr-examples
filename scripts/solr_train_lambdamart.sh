@@ -1,4 +1,4 @@
-java -jar RankLib-2.1-patched.jar \
+java -jar RankLib-2.10.jar \
 	-train ../data/solr_features_train.txt \
 	-test ../data/solr_features_test.txt \
 	-validate ../data/solr_features_val.txt \

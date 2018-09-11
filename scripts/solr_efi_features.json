@@ -1,0 +1,209 @@
+[
+  {
+    "store": "myFeatureStore",
+    "name": "origScore",
+    "class": "org.apache.solr.ltr.feature.OriginalScoreFeature",
+    "params": {}
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "titleSimTFIDF",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!dismax qf=title_tfidf}${query}"
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "titleSimBM25",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!dismax qf=title_t}${query}"
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "descSimTFIDF",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!dismax qf=description_tfidf}${query}"
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "descSimBM25",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!dismax qf=description_t}${query}"
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "docRecency",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!func}recip(ms(NOW, released_dt), 3.16e-11, 1, 1)"
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isGoHands",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}GoHands"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isAniplex",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Aniplex"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isThriller",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Thriller"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isForeign",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Foreign"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isDrama",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Drama"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isWar",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}War"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isAction",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Action"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isComedy",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Comedy"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isMusic",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Music"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isRomance",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Romance"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isAdventure",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Adventure"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isFamily",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Family"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isFantasy",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Fantasy"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isCrime",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Crime"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isHorror",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Horror"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isHistory",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}History"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isMystery",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Mystery"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isAnimation",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Animation"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isDocumentary",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Documentary"]
+    }
+  },
+  {
+    "store": "myFeatureStore",
+    "name": "isWestern",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "fq": ["{!terms f=genres_ss}Western"]
+    }
+  }
+]
+

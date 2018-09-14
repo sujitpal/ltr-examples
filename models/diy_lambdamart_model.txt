@@ -1,0 +1,77 @@
+## LambdaMART
+## No. of trees = 1000
+## No. of leaves = 10
+## No. of threshold candidates = 256
+## Learning rate = 0.1
+## Stop early = 100
+
+<ensemble>
+	<tree id="1" weight="0.1">
+		<split>
+			<feature> 1 </feature>
+			<threshold> 3.7547681 </threshold>
+			<split pos="left">
+				<feature> 4 </feature>
+				<threshold> 2.7627785 </threshold>
+				<split pos="left">
+					<feature> 23 </feature>
+					<threshold> -1.0150902 </threshold>
+					<split pos="left">
+						<output> -1.9815659523010254 </output>
+					</split>
+					<split pos="right">
+						<feature> 3 </feature>
+						<threshold> 3.7252426 </threshold>
+						<split pos="left">
+							<feature> 26 </feature>
+							<threshold> -0.1 </threshold>
+							<split pos="left">
+								<output> -1.4591048955917358 </output>
+							</split>
+							<split pos="right">
+								<output> 0.276425302028656 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> -1.0965843200683594 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 24 </feature>
+					<threshold> -0.10660036 </threshold>
+					<split pos="left">
+						<feature> 1 </feature>
+						<threshold> 2.2674367 </threshold>
+						<split pos="left">
+							<output> 1.633016586303711 </output>
+						</split>
+						<split pos="right">
+							<output> 1.9387855529785156 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> -1.13746178150177 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 9 </feature>
+				<threshold> -0.6513722 </threshold>
+				<split pos="left">
+					<output> 2.0 </output>
+				</split>
+				<split pos="right">
+					<feature> 13 </feature>
+					<threshold> -0.63589793 </threshold>
+					<split pos="left">
+						<output> 1.6927391290664673 </output>
+					</split>
+					<split pos="right">
+						<output> -0.1654789000749588 </output>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+</ensemble>

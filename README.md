@@ -14,4 +14,7 @@ Look inside [data/README.md](data/README.md) and [scripts/README.md](scripts/REA
 
 In addition, we have used [Solr 7.4.0](http://lucene.apache.org/solr/downloads.html) and [Elasticsearch 6.3.1](https://www.elastic.co/downloads/past-releases/elasticsearch-6-3-1) for the respective index backends.
 
+## Presentation Slides
+
+* [Presentation made at RELX Search Summit 2018](https://www.slideshare.net/sujitpal/search-summit2018ltrpresentation).
 

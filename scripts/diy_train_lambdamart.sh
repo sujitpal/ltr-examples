@@ -4,7 +4,7 @@ java -jar RankLib-2.10.jar \
 	-validate ../data/diy_features_val.txt \
 	-ranker 6 \
 	-metric2t NDCG@10 \
-	-metric2T ERR@10 \
+	-metric2T NDCG@10 \
 	-norm zscore \
-	-save ../data/diy_lambdamart_model.txt
+	-save ../models/diy_lambdamart_model.txt
 

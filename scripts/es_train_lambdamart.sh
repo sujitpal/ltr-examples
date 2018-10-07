@@ -4,6 +4,6 @@ java -jar RankLib-2.10.jar \
 	-validate ../data/es_features_val.txt \
 	-ranker 6 \
 	-metric2t NDCG@10 \
-	-metric2T ERR@10 \
-	-save ../data/es_lambdamart_model.txt
+	-metric2T NDCG@10 \
+	-save ../models/es_lambdamart_model.txt
 

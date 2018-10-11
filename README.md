@@ -17,4 +17,5 @@ In addition, we have used [Solr 7.4.0](http://lucene.apache.org/solr/downloads.h
 ## Presentation Slides
 
 * [Presentation made at RELX Search Summit 2018](https://www.slideshare.net/sujitpal/search-summit2018ltrpresentation).
+* [Presentation made at LexisNexis Search Guild](https://www.slideshare.net/sujitpal/learning-to-rank-presentation-v2-at-lexisnexis-search-guild).
 
